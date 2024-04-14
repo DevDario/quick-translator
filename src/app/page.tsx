@@ -1,4 +1,6 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -6,15 +8,22 @@ export default function Home() {
       <div className="flex flex-row justify-between my-9">
 
           <div className="flex flex-col items-start gap-2">
-            <p className="text-slate-100 font-semibold flex items-start">your generated qrcode
+            <p className="text-slate-900 font-semibold flex items-start">your generated qrcode
             </p>
 
-            <div className="flex flex-col gap-8 bg-slate-800 w-80 h-80 rounded-md">
+            <div className="flex flex-col gap-8 bg-slate-50 border-2 border-slate-200 w-80 h-80 rounded-md">
 
             </div>
 
-            <div className="flex flex-row justify-between gap-5 items-start">
-
+            <div className="flex flex-row justify-between gap-2 items-start">
+              <Button asChild className="h-15">
+                <Link href={'download'}>Download</Link>
+              </Button>
+              <Button 
+                className="h-15"
+              >
+                  Share
+              </Button>
             </div>
 
           </div>

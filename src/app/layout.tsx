@@ -1,19 +1,20 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Image from "next/image";
+/* eslint-disable react/react-in-jsx-scope */
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import './globals.css'
+import Image from 'next/image'
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "QuickTranslator - Generate a QRcode for your text",
-  description: "Quickly create Qrcode's for your texts",
-};
+  title: 'QuickTranslator - Generate a QRcode for your text',
+  description: "Quickly create Qrcode's for your texts"
+}
 
-export default function RootLayout({
+export default function RootLayout ({
   children
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en">
@@ -27,14 +28,14 @@ export default function RootLayout({
                 <h1 className='text-slate-900 font-bold'>QuickTranslator</h1>
             </div>
             <div className='flex flex-row items-center justify-center'>
-                <Image 
+                <Image
                     alt='github-logo'
                     src={''}
                 />
             </div>
-        </nav>        
+        </nav>
         {children}
       </body>
     </html>
-  );
+  )
 }

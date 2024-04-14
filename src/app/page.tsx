@@ -44,7 +44,7 @@ export default function Home (): React.JSX.Element {
                 <DropdownMenu>
 
                   <DropdownMenuTrigger asChild>
-                    <Button variant="outline">select your language</Button>
+                    <Button className='text-slate-900' variant="outline">select your language</Button>
                   </DropdownMenuTrigger>
 
                   <DropdownMenuContent className="w-56">

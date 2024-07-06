@@ -53,7 +53,7 @@ export default function Home (): React.JSX.Element {
                   <DropdownMenuSeparator />
 
                     <DropdownMenuRadioGroup value={language} onValueChange={setLanguage}>
-                      <DropdownMenuRadioItem value="portuguese">Portuguese</DropdownMenuRadioItem>
+                      <DropdownMenuRadioItem value="Portuguese">Portuguese</DropdownMenuRadioItem>
 
                       <DropdownMenuRadioItem value="French">French</DropdownMenuRadioItem>
 
@@ -64,6 +64,10 @@ export default function Home (): React.JSX.Element {
                       <DropdownMenuRadioItem value="Korean">Korean</DropdownMenuRadioItem>
 
                       <DropdownMenuRadioItem value="Italian">Italian</DropdownMenuRadioItem>
+
+                      <DropdownMenuRadioItem value="Russian">Russian</DropdownMenuRadioItem>
+
+                      <DropdownMenuRadioItem value="Turkish">Turkish</DropdownMenuRadioItem>
 
                     </DropdownMenuRadioGroup>
 
